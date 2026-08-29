@@ -1,0 +1,93 @@
+import { Series } from './types';
+
+export const SERIES: Series[] = [
+  // --- Featured Top 10 ---
+  { id: 'f1', name: 'Formula 1', shortName: 'F1', color: '#e10600', icon: '🏎️', featured: true, sessionTypes: ['FP1','FP2','FP3','Qualifying','Sprint Qualifying','Sprint','Race'] },
+  { id: 'wec', name: 'World Endurance Championship', shortName: 'WEC', color: '#00529f', icon: '🏁', featured: true, sessionTypes: ['Practice','Qualifying','Hyperpole','Race'] },
+  { id: 'imsa', name: 'IMSA SportsCar', shortName: 'IMSA', color: '#c4122f', icon: '🏁', featured: true, sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'motogp', name: 'MotoGP', shortName: 'MotoGP', color: '#be1522', icon: '🏍️', featured: true, sessionTypes: ['FP1','FP2','Practice','Qualifying','Sprint','Race'] },
+  { id: 'indycar', name: 'IndyCar Series', shortName: 'Indy', color: '#0065a4', icon: '🏎️', featured: true, sessionTypes: ['Practice','Qualifying','Fast 6','Race'] },
+  { id: 'nascar-cup', name: 'NASCAR Cup Series', shortName: 'NASCAR', color: '#ffd60a', icon: '🏎️', featured: true, sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'wrc', name: 'World Rally Championship', shortName: 'WRC', color: '#002f6c', icon: '🚗', featured: true, sessionTypes: ['Shakedown','Stage','Power Stage'] },
+  { id: 'dtm', name: 'DTM', shortName: 'DTM', color: '#1e1e1e', icon: '🏎️', featured: true, sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'fe', name: 'Formula E', shortName: 'FE', color: '#0000ff', icon: '⚡', featured: true, sessionTypes: ['FP1','FP2','Qualifying','Duels','Race'] },
+  { id: 'wsbk', name: 'World Superbike', shortName: 'WSBK', color: '#e3001b', icon: '🏍️', featured: true, sessionTypes: ['FP1','FP2','Superpole','Race 1','Superpole Race','Race 2'] },
+
+  // --- Open Wheel ---
+  { id: 'f2', name: 'Formula 2', shortName: 'F2', color: '#0090d0', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Sprint Race','Feature Race'] },
+  { id: 'f3', name: 'Formula 3', shortName: 'F3', color: '#e60012', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Sprint Race','Feature Race'] },
+  { id: 'f4', name: 'Formula 4', shortName: 'F4', color: '#ff6600', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2','Race 3'] },
+  { id: 'indy-nxt', name: 'Indy NXT', shortName: 'NXT', color: '#0065a4', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'super-formula', name: 'Super Formula', shortName: 'SF', color: '#d30000', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'sf-lights', name: 'Super Formula Lights', shortName: 'SFL', color: '#d30000', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'f1-academy', name: 'F1 Academy', shortName: 'F1A', color: '#ff007f', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'gb3', name: 'GB3 Championship', shortName: 'GB3', color: '#0033a0', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2','Race 3'] },
+  { id: 'eurocup3', name: 'Eurocup-3', shortName: 'EC3', color: '#000000', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'freca', name: 'FRECA', shortName: 'FRECA', color: '#0055a4', icon: '🏎️', sessionTypes: ['Practice','Qualifying 1','Race 1','Qualifying 2','Race 2'] },
+  { id: 'fra', name: 'Formula Regional Americas', shortName: 'FRA', color: '#bf0d3e', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'frj', name: 'Formula Regional Japan', shortName: 'FRJ', color: '#d30000', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+
+  // --- Sports Cars / Endurance / GT ---
+  { id: 'elms', name: 'European Le Mans Series', shortName: 'ELMS', color: '#0033a0', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'aslms', name: 'Asian Le Mans Series', shortName: 'AsLMS', color: '#e60012', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'mlmc', name: 'Michelin Le Mans Cup', shortName: 'MLMC', color: '#00529f', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'gtwce', name: 'GT World Challenge Europe', shortName: 'GTWCE', color: '#ff6600', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'gtwca', name: 'GT World Challenge America', shortName: 'GTWCA', color: '#ff6600', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'gtwcas', name: 'GT World Challenge Asia', shortName: 'GTWCAs', color: '#ff6600', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'gtwcau', name: 'GT World Challenge Australia', shortName: 'GTWCAu', color: '#ff6600', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'igtc', name: 'Intercontinental GT Challenge', shortName: 'IGTC', color: '#000000', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'nls', name: 'Nürburgring Langstrecken-Serie', shortName: 'NLS', color: '#00a3e0', icon: '🏁', sessionTypes: ['Qualifying','Race'] },
+  { id: 'supergt', name: 'Super GT', shortName: 'SGT', color: '#d30000', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'igto', name: 'International GT Open', shortName: 'IGTO', color: '#000000', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'bgt', name: 'British GT', shortName: 'BGT', color: '#002469', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'adacgt', name: 'ADAC GT Masters', shortName: 'ADAC GT', color: '#ffcc00', icon: '🏁', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+
+  // --- Touring / Stock Cars ---
+  { id: 'nascar-xfinity', name: 'NASCAR Xfinity Series', shortName: 'Xfinity', color: '#005bbb', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'nascar-truck', name: 'NASCAR Truck Series', shortName: 'Trucks', color: '#e4002b', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'arca', name: 'ARCA Menards Series', shortName: 'ARCA', color: '#c41230', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'supercars', name: 'Supercars Championship', shortName: 'Supercars', color: '#000000', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Top 10 Shootout','Race'] },
+  { id: 'tcr-world', name: 'TCR World Tour', shortName: 'TCR WT', color: '#e3001b', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'tcr-eu', name: 'TCR Europe', shortName: 'TCR EU', color: '#0033a0', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'tcr-na', name: 'TCR North America', shortName: 'TCR NA', color: '#bf0d3e', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'tcr-au', name: 'TCR Australia', shortName: 'TCR AU', color: '#005bbb', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2','Race 3'] },
+  { id: 'btcc', name: 'British Touring Car Championship', shortName: 'BTCC', color: '#002469', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Race 1','Race 2','Race 3'] },
+
+  // --- Rally / Off-road ---
+  { id: 'wrc2', name: 'WRC2', shortName: 'WRC2', color: '#002f6c', icon: '🚗', sessionTypes: ['Shakedown','Stage','Power Stage'] },
+  { id: 'wrc3', name: 'WRC3', shortName: 'WRC3', color: '#002f6c', icon: '🚗', sessionTypes: ['Shakedown','Stage','Power Stage'] },
+  { id: 'jwrc', name: 'Junior WRC', shortName: 'JWRC', color: '#002f6c', icon: '🚗', sessionTypes: ['Shakedown','Stage','Power Stage'] },
+  { id: 'erc', name: 'European Rally Championship', shortName: 'ERC', color: '#0033a0', icon: '🚗', sessionTypes: ['Qualifying','Stage'] },
+  { id: 'ara', name: 'American Rally Association', shortName: 'ARA', color: '#bf0d3e', icon: '🚗', sessionTypes: ['Stage'] },
+  { id: 'brc', name: 'British Rally Championship', shortName: 'BRC', color: '#002469', icon: '🚗', sessionTypes: ['Stage'] },
+  { id: 'aprc', name: 'Asia-Pacific Rally', shortName: 'APRC', color: '#e60012', icon: '🚗', sessionTypes: ['Stage'] },
+  { id: 'dakar', name: 'Dakar Rally', shortName: 'Dakar', color: '#e3001b', icon: '🏜️', sessionTypes: ['Prologue','Stage'] },
+  { id: 'w2rc', name: 'World Rally-Raid Championship', shortName: 'W2RC', color: '#e3001b', icon: '🏜️', sessionTypes: ['Prologue','Stage'] },
+  { id: 'extreme-e', name: 'Extreme E', shortName: 'XE', color: '#00ff00', icon: '⚡', sessionTypes: ['Qualifying','Semi-Final','Final'] },
+  { id: 'score', name: 'SCORE International', shortName: 'SCORE', color: '#d30000', icon: '🏜️', sessionTypes: ['Qualifying','Race'] },
+  { id: 'sst', name: 'Stadium Super Trucks', shortName: 'SST', color: '#ff6600', icon: '🛻', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'koh', name: 'King of the Hammers', shortName: 'KOH', color: '#b97a57', icon: '🏜️', sessionTypes: ['Qualifying','Race'] },
+
+  // --- Motorcycles ---
+  { id: 'moto2', name: 'Moto2', shortName: 'Moto2', color: '#000000', icon: '🏍️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'moto3', name: 'Moto3', shortName: 'Moto3', color: '#000000', icon: '🏍️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'motoe', name: 'MotoE', shortName: 'MotoE', color: '#00ff00', icon: '⚡', sessionTypes: ['Practice','Qualifying','Race 1','Race 2'] },
+  { id: 'wss', name: 'World Supersport', shortName: 'WSS', color: '#000000', icon: '🏍️', sessionTypes: ['Practice','Superpole','Race 1','Race 2'] },
+  { id: 'bsb', name: 'British Superbike', shortName: 'BSB', color: '#002469', icon: '🏍️', sessionTypes: ['Practice','Qualifying','Sprint','Feature Race'] },
+  { id: 'ama-sx', name: 'AMA Supercross', shortName: 'Supercross', color: '#c41230', icon: '🏍️', sessionTypes: ['Qualifying','Heat','Main Event'] },
+  { id: 'mxgp', name: 'MXGP', shortName: 'MXGP', color: '#000000', icon: '🏍️', sessionTypes: ['Practice','Qualifying Race','Race 1','Race 2'] },
+  { id: 'wec-moto', name: 'World Enduro Championship', shortName: 'EnduroGP', color: '#000000', icon: '🏍️', sessionTypes: ['Super Test','Day 1','Day 2'] },
+
+  // --- Other & Sim ---
+  { id: 'pikes-peak', name: 'Pikes Peak Hill Climb', shortName: 'PPIHC', color: '#000000', icon: '⛰️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'goodwood', name: 'Goodwood Festival of Speed', shortName: 'FOS', color: '#00472f', icon: '⛰️', sessionTypes: ['Run'] },
+  { id: 'iomtt', name: 'Isle of Man TT', shortName: 'IoMTT', color: '#000000', icon: '🏍️', sessionTypes: ['Practice','Qualifying','Race'] },
+  { id: 'worldrx', name: 'World Rallycross', shortName: 'WRX', color: '#ff6600', icon: '🚗', sessionTypes: ['Heat','Semi-Final','Final'] },
+  { id: 'nhra', name: 'NHRA Drag Racing', shortName: 'NHRA', color: '#0033a0', icon: '🏎️', sessionTypes: ['Qualifying','Eliminations'] },
+  { id: 'karting-fia', name: 'FIA Karting', shortName: 'Karting', color: '#00529f', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Heats','Final'] },
+  { id: 'wsk', name: 'WSK Karting', shortName: 'WSK', color: '#e60012', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Heats','Prefinal','Final'] },
+  { id: 'rotax', name: 'Rotax MAX Challenge', shortName: 'Rotax', color: '#e3001b', icon: '🏎️', sessionTypes: ['Practice','Qualifying','Heats','Prefinal','Final'] },
+  { id: 'sim-iracing', name: 'iRacing Special Events', shortName: 'iRacing', color: '#000000', icon: '🎮', sessionTypes: ['Race'] },
+  { id: 'sim-rfactor2', name: 'rFactor 2 Pro', shortName: 'rF2', color: '#ff6600', icon: '🎮', sessionTypes: ['Qualifying','Race'] },
+  { id: 'sim-gt7', name: 'Gran Turismo World Series', shortName: 'GT7', color: '#000000', icon: '🎮', sessionTypes: ['Qualifying','Race'] },
+];
